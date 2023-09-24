@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom e Eventos</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            background-color: rgb(108, 190, 116);
+        }
+
+        h1,
+        h2 {
+            text-transform: uppercase;
+            text-align: center;
+            color: beige;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #meuId {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #f5f5f5;
+            color: #333;
+            border-radius: 14px;
+        }
+
+        .minhaClasse {
+            border: 2px solid #ccc;
+        }
+
+        button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            margin: 10px 0;
+            display: block;
+            border: none;
+        }
+
+        form {
+            margin: 20px 0;
+        }
+
+        form button {
+            background-color: #008cba;
+        }
+
+        form button:hover {
+            background-color: #007b9a;
+        }
+
+        a {
+            display: block;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        #meuId.novaClasse{
+            color: rgb(186, 47, 47);
+        }
+    </style>
+
+    <h1>Fase final do curso de JS</h1>
+    <h2>Dom e Eventos</h2>
+
+    <!-- Seção de DOM -->
+
+    <!-- Exemplo para seleção de elementos no DOM -->
+    <div id="meuId" class="minhaClasse">Olá, mundo!</div>
+    <a href="https://www.google.com" target="_blank">Google</a>
+
+    <!-- Exemplo para manipulação da estrutura do DOM -->
+    <button id="botaoCriar">Criar elemento</button>
+    <button id="botaoRemover">Remover elemento</button>
+
+    <!-- Exemplos para eventos -->
+    <button id="botaoEvento">Clique em mim</button>
+    <input type="text" id="inputEvento" placeholder="Digite algo aqui" />
+
+    <!-- Exemplo para eventos de formulário -->
+    <form id="meuFormulario">
+        <input type="text" id="meuInput" placeholder="Nome" />
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Exemplo para eventos de propagação e delegação -->
+    <div id="elementoPai">
+        Pai
+        <div id="elementoFilho" class="classeDosFilhos">Filho</div>
+    </div>
+
+    <!-- Exemplo para preventDefault e stopPropagation -->
+    <a href="https://www.google.com" id="meuLink">Link para o Google</a>
+
+    <script src="./dom.js"></script>
+</body>
+
+</html>
